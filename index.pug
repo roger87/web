@@ -13,7 +13,9 @@ html(lang="zh")
         meta(charset="UTF-8")
         title DogLife.
     body 
-        include nav.pug
+        main
+            include nav.pug
+            link(rel="stylesheet", href="index.css")
 
-    +CreateBox("標題","內容","dog.jpg")
+    +CreateBox("標題","內容","按鈕","dog.jpg")
     
