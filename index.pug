@@ -1,9 +1,9 @@
-mixin CreateBox(totle, content, button, imgName)
+mixin CreateBox(title, content, button, imgName)
     .box
         .content
            h1=title
            p=content
-           a(href="#"=button)
+           a(href="#")=button
         .picture
             img(src=imgName)
 
@@ -14,3 +14,6 @@ html(lang="zh")
         title DogLife.
     body 
         include nav.pug
+
+    +CreateBox("標題","內容","dog.jpg")
+    
