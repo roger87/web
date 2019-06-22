@@ -107,3 +107,97 @@ a {
     color: #999
 }
 
+.contact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width:80%;
+    margin: 0 auto;
+    color:#555; 
+}
+
+.contact form{
+    padding: 0 30px;
+}
+
+
+.gray {
+    background-color: #eee;
+}
+.contact input {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+.contact label {
+    display: block;
+    margin: 10px 0;
+}
+.contact textarea {
+    width: 100%;
+    border-radius: 10px;
+}
+.contact input[type="submit"] {
+    width: 120px;
+    padding: 0;
+    border-radius: 60px;
+    margin: 30px 0;
+}
+.contact .text {
+    padding: 0 30px;
+}
+
+
+footer {
+    background-color:#f442d7;
+    padding: 100pz 20px;
+    height: 400px;
+}
+
+.footerBox {
+    width:80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    color:#ccc;
+}
+
+.footerBox h3{
+    color:white;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.footerBox ul li a{
+    color:#ccc;
+}
+
+.footerBox ul{
+    list-style: none;
+}
+
+.footerBox ul li {
+    padding: 10px 0;
+}
+
+.footerBox .follow  {
+    display: inline-block;
+    width:30px;
+    padding: 5px;
+}
+
+.footerBox .follow  img{
+    width:100%;
+}
+
+footer hr {
+    width: 80%;
+    height: 1px;
+    background-color: #41f4ca;
+    margin:  0 auto;
+}
+
+footer .copyright {
+    color:#55f441;
+    text-align: center;
+    margin-top: 20px;
+}
