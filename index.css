@@ -6,13 +6,20 @@
 .box {
     display:grid;
     grid-template-columns: 50% 50%;
-    margin: 60px 0;
+    margin: 30px auto;
 }
 
 .box .picture img[src="dog1.jpg"] {
     box-shadow: 0 5px 7px rgba(0, 0, 0, 0.5);
     border: 18px solid white;
-    width: 60%;
+    width: 300px;
     transform: rotate(15deg);
 }
 
+.box .picture img[src="dog2.jpg"] {
+    width:300px;
+}
+
+.box .picture img[src="dog3.jpg"] {
+    width:300px;
+}

@@ -36,11 +36,26 @@ html(lang="zh")
         include nav.pug
         +CreateBox("狗狗可愛","我們是熱心的愛狗人士","詳閱","dog1.jpg")
         +CreateTitle("歡迎來到我們的網站","他們是我們心中最軟的那塊")
-        +CreateBox("快樂的寵物2","他們是我們心中最軟的那塊2","詳閱2","dog2.jpg")
+        +CreateBox("快樂的寵物","他們很快樂,三杯三杯","詳閱2","dog2.jpg")
         +CreateBox("寵物寫真","狗狗野外露出","詳閱3","dog3.jpg")
         +CreateTitle("價格表","我們提供三種付費服務")
         .priceBox
-            +CreatePrice("basic", 1, "基本", "300元")
-            +CreatePrice("prem", 2, "一般", "1000元")
-            +CreatePrice("pro", 3, "高級", "3000元")
+            +CreatePrice("basic", 1, "南部人", "300元")
+            +CreatePrice("prem", 2, "中部人", "1000元")
+            +CreatePrice("pro", 3, "天龍人", "3000元")
         +CreateTitle("聯絡我們","有問題歡迎來信")
+        .contact
+            form
+                label(for="name") 姓名
+                input(type="text" id="name")
+                label(for="email") 信箱
+                input(type="email" id="email")
+                label(for="message") 訊息
+                textarea(name="message" id="message" cols="30" rows="10")
+        .text
+            h3 地址
+            p 北屯派出所
+            h3 信箱
+            p 8787@gmail.com
+            h3 電話
+            p 0204
