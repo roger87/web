@@ -7,17 +7,40 @@ mixin CreateBox(title, content, button, imgName)
         .picture
             img(src=imgName)
 
+mixin CreateTitle(title, content)
+    .title
+        h1=title
+        p=content
+
+mixin CreatePrice(className, count, title, price )
+    div(class=className)
+    - for (var i=1; i<= count; i++)
+        img(src="dogpic.png")
+    h1=title
+    h3=price
+    ul
+        li 寵物講座
+        li 飼料試吃包
+        li 寵物寫真
+        li 寵物旅館
+        li 寵物健康檢查
+
 <!DOCTYPE html>
 html(lang="zh")
     head
         meta(charset="UTF-8")
         title DogLife.
+        link(rel="stylesheet", href="index.css")
     body 
-        main
-            include nav.pug
-            link(rel="stylesheet", href="index.css")
-
-    +CreateBox("標題","內容","按鈕","dog1.jpg")
-    +CreateBox("標題2","內容2","按鈕2","dog2.jpg")
-    +CreateBox("標題3","內容3","按鈕3","dog3.jpg")
-    
+       main
+        include nav.pug
+        +CreateBox("狗狗可愛","我們是熱心的愛狗人士","詳閱","dog1.jpg")
+        +CreateTitle("歡迎來到我們的網站","他們是我們心中最軟的那塊")
+        +CreateBox("快樂的寵物2","他們是我們心中最軟的那塊2","詳閱2","dog2.jpg")
+        +CreateBox("寵物寫真","狗狗野外露出","詳閱3","dog3.jpg")
+        +CreateTitle("價格表","我們提供三種付費服務")
+        .priceBox
+            +CreatePrice("basic", 1, "基本", "300元")
+            +CreatePrice("prem", 2, "一般", "1000元")
+            +CreatePrice("pro", 3, "高級", "3000元")
+        +CreateTitle("聯絡我們","有問題歡迎來信")

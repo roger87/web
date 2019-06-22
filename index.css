@@ -16,16 +16,3 @@
     transform: rotate(15deg);
 }
 
-.box .picture img[src="dog2.jpg"] {
-    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.5);
-    border: 18px solid white;
-    width: 60%;
-    transform: rotate(345deg);
-}
-
-.box .picture img[src="dog3.jpg"] {
-    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.5);
-    border: 18px solid white;
-    width: 60%;
-    transform: rotate(45deg);
-}
