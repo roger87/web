@@ -63,3 +63,47 @@ a {
     text-align: center;
     
 }
+
+.priceBox {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.priceBox h2 {
+    margin: 30px 0;
+}
+.priceBox h3 {
+    margin: 20px 0;
+}
+.priceBox ul li {
+    margin: 10px 0;
+}
+.priceBox a {
+    margin: 10px 0;
+}
+
+.priceBox div{
+    background-color: rgb(150, 50, 50);
+    color: white;
+    text-align: center;
+    padding: 50px 30px;
+}
+.priceBox div ul {
+    list-style-image: url(check.png);
+    list-style-position: inside;
+    text-align: left;
+}
+.priceBox .prem {
+    background-color: #333;
+}
+.priceBox a {
+    background-color: #333;
+}
+.priceBox .prem a {
+    background-color: rgb(150, 50, 50);
+}
+
+.priceBox .basic ul li:nth-child(n+3), .priceBox .prem ul li:nth-child(n+5)  {
+    text-decoration: line-through;
+    color: #999
+}
+
